@@ -1,7 +1,10 @@
 <mat-form-field>
+
 	<input matInput
-	[value]="value"
-	(keyup)="changeValue($event)"
+	name="login" 
+	[(ngModel)]="login"
 	>
+
 </mat-form-field>
-<button (click)="navigateToDetail()">Detail</button>
+<button mat-button (click)="navigateToDetail()">Detail</button>
+<p>{{login}}</p>

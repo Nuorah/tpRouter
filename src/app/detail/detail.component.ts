@@ -28,8 +28,7 @@ export class DetailComponent implements OnInit {
 								  data['user'].company, 
 								  data['user'].bio, 
 								  data['user'].location, 
-								  new URL(data['user'].avatar_url))},
-		(err) => this.navigateToHome())
+								  new URL(data['user'].avatar_url))})
 		console.log(this.user);
 	}
 
